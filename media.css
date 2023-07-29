@@ -1,0 +1,11 @@
+@media screen and (max-width: 480px) {
+    .right-nav,.left-nav{
+        display: none !important;
+    }
+    h1{
+        font-size: 0.8em;
+    }
+    .menu-btn{
+        font-size: 0.6em;
+    }
+}

@@ -1,0 +1,105 @@
+:root{
+    --black: #1A1A1D;
+    --red: #B52222;
+    --yellow: #FAD768;
+    --orange: #E36900;
+}
+a{
+    color: var(--black);
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'FuturaBookC', sans-serif;
+    src: url('resources/fonts/FUTURABOOKC.TTF')
+        format("truetype");
+}
+
+h1{
+    font-size: 1.2em;
+}
+
+body{
+    font-family: 'FuturaBookC', sans-serif;
+}
+
+.video-bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-bg video {
+    filter: brightness(80%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.video-bg__content {
+    z-index: 2;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.menu-btn{
+    transition: all .5s ease;
+    margin-top: 100px;
+    font-size: 1em;
+    padding: 20px 60px;
+    border: 1px solid var(--red);
+    color: #fff;
+}
+.menu-btn:hover{
+    background: var(--red);
+    color: #fff;
+}
+/* svg animations */
+
+
+
+/* header */
+
+header{
+    position: relative;
+    color: var(--black);
+    z-index: 10;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+    background: #fff;
+    font-weight: bold;
+}
+
+.header-logo img{
+    margin: 0 50px;
+    width: 140px;
+}
+
+nav{
+    height: 70px;
+}
+
+nav a{
+    padding: 0 15px;
+}
